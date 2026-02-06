@@ -17,76 +17,69 @@
 
   <body>
 
-    <div class="wrap">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day!</title>
+    <style>
+        body {
+            background-color: #fff0f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-      <h1>For You 💖</h1>
+        .container {
+            position: relative;
+        }
 
-      <div class="postcard1"></div>
+        /* The Rose Petals */
+        .rose {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: #e63946;
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            animation: bloom 3s infinite alternate;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+        }
 
-      <div class="postcard">
+        .rose::before, .rose::after {
+            content: '';
+            position: absolute;
+            background: #d00000;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
 
-        <div class="letter"></div>
+        .rose::before { left: -30px; transform: rotate(-15deg); }
+        .rose::after { right: -30px; transform: rotate(15deg); }
 
-        <p>
+        /* The Stem */
+        .stem {
+            width: 10px;
+            height: 150px;
+            background: #2d6a4f;
+            margin: -10px auto 0;
+            border-radius: 5px;
+            position: relative;
+            z-index: -1;
+        }
 
-          <span>My Love,</span>
-
-          <br />
-
-          On this Rose Day, each petal symbolizes my admiration <br />for you.
-
-          Your presence colors my world with joy and warmth.Like a rose in full
-
-          bloom, your beauty captivates my heart. The red roses reflect the
-
-          passion that burns for you, while the white ones signify the purity of
-
-          our love. In the garden of life, you're my most cherished blossom.
-
-          Thank you for being my source of love and inspiration. Our journey
-
-          together is as sweet as the fragrance of roses. Happy Rose Day, my
-
-          love. Here's to many more petals of shared laughter and enduring love.
-
-          <br />
-
-          <span class="ullu">
-
-            Forever Yours,
-
-            <br />
-
-            Ullu</span
-
-          >
-
-        </p>
-
-        <div class="address">
-
-          <img
-
-            src="https://i.postimg.cc/9Xq7XyF2/Untold-Coding.png"
-
-            class="mail_stamp"
-
-          />
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-    <footer>
-
-      <p>crafted by @untoldcoding.</p>
-
-    </footer>
-
-  </body>
-
-</html>
+        /* The Leaf */
+        .leaf {
+            width: 40px;
+            height: 20px;
+            background: #40916c;
+            border-radius: 20px 0;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            
