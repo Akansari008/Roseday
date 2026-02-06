@@ -18,6 +18,7 @@
   <body>
 
     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,12 +35,10 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
         .container {
             position: relative;
-        }
-
-        /* The Rose Petals */
+        }    
+      /* The Rose Petals */
         .rose {
             position: relative;
             width: 100px;
@@ -49,7 +48,6 @@
             animation: bloom 3s infinite alternate;
             box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
         }
-
         .rose::before, .rose::after {
             content: '';
             position: absolute;
@@ -58,10 +56,8 @@
             height: 100px;
             border-radius: 50%;
         }
-
         .rose::before { left: -30px; transform: rotate(-15deg); }
         .rose::after { right: -30px; transform: rotate(15deg); }
-
         /* The Stem */
         .stem {
             width: 10px;
@@ -72,7 +68,6 @@
             position: relative;
             z-index: -1;
         }
-
         /* The Leaf */
         .leaf {
             width: 40px;
