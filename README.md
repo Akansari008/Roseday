@@ -47,49 +47,5 @@
         0% { transform: scale(1); }
         50% { transform: scale(1.2); }
         100% { transform: scale(1); }
-    }
-
-    /* Falling roses */
-    .flower {
-        position: absolute;
-        top: -50px;
-        font-size: 30px;
-        animation: fall linear infinite;
-        opacity: 0.8;
-    }
-
-    @keyframes fall {
-        to {
-            transform: translateY(110vh) rotate(360deg);
-        }
-    }
-</style>
-</head>
-
-<body>
-
-<div class="card">
-    <div class="rose">🌹</div>
-    <h1>Happy Rose Day</h1>
-    <p>
-        Just like this rose,<br>
-        you make my life beautiful,<br>
-        colorful, and full of love ❤️
-    </p>
-    <p><strong>Forever Yours</strong></p>
-</div>
-
-<!-- Flowers -->
-<script>
-    for (let i = 0; i < 20; i++) {
-        let flower = document.createElement("div");
-        flower.className = "flower";
-        flower.innerHTML = "🌹";
-        flower.style.left = Math.random() * 100 + "vw";
-        flower.style.animationDuration = (Math.random() * 5 + 5) + "s";
-        document.body.appendChild(flower);
-    }
-</script>
-
-</body>
-</html>
+    } /* Falling roses */.flower {
+    
