@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Rose Day Kausar</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #ff4d6d, #ff9a9e);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Floating roses */
+        .rose {
+            position: absolute;
+            color: #ff1744;
+            font-size: 28px;
+            animation: float 8s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-10vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+            max-width: 420px;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #ffe6ea;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            font-size: 40px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ffe6ea;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Roses -->
+    <script>
+        for (let i = 0; i < 25; i++) {
+            let rose = document.createElement("div");
+            rose.className = "rose";
+            rose.innerHTML = "🌹";
+            rose.style.left = Math.random() * 100 + "vw";
+            rose.style.animationDelay = Math.random() * 8 + "s";
+            rose.style.fontSize = (20 + Math.random() * 20) + "px";
+            document.body.appendChild(rose);
+        }
+    </script>
+
+    <!-- Main Card -->
+    <div class="card">
+        <h1>Happy Rose Day</h1>
+        <h2>Kausar Qureshi 🌹</h2>
+        <p>
+            Just like a rose,<br>
+            you fill my life with beauty,<br>
+            love, and fragrance. 💖<br><br>
+            Every petal reminds me of your smile,<br>
+            and every rose reminds me how lucky I am<br>
+            to have you.
+        </p>
+        <div class="heart">❤️</div>
+        <div class="footer">
+            Forever yours,<br>
+            <strong>Anwar</strong>
+        </div>
+    </div>
+
+</body>
+</html>
